@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>POS Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Food Ordering System</h2>
+  <p>Prices are shown below. Add items to your order.</p>
+
+  <div id="menu">
+    <p>Burger - 60 pesos</p>
+    <p>Fries - 50 pesos</p>
+    <p>Fishbol - 20 pesos</p>
+    <p>Kikiam - 25 pesos</p>
+  </div>
+
+  <div id="order-section">
+    <label for="choice">Choice:</label>
+    <select id="choice">
+      <option value="burger">Burger</option>
+      <option value="fries">Fries</option>
+      <option value="fishbol">Fishbol</option>
+      <option value="kikiam">Kikiam</option>
+    </select>
+
+    <label for="quantity">Quantity:</label>
+    <input type="number" id="quantity" min="1" value="1">
+
+    <button id="addItem">Add Item</button>
+  </div>
+
+  <h3>Order Summary</h3>
+  <ul id="orderList"></ul>
+  <p>Total: <span id="total">0</span> pesos</p>
+
+  <div id="payment">
+    <label for="cash">Cash:</label>
+    <input type="number" id="cash" placeholder="Enter cash">
+    <button id="payBtn">Pay!</button>
+    <p id="change"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
